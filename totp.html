@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,15 +15,7 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://security-totp.appspot.com/resources/js/totp.js"></script>
-				<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
-		ga('create', 'UA-47277867-1', 'security-totp.appspot.com');
-		ga('send', 'pageview');
-		</script>
 			</head>
 	<body>
 		<div class="container">
@@ -32,7 +23,7 @@
 			<h1>Security TOTP - Google Authenticator Compatibility Demo</h1>
 			</header>
 			<section>
-        <div>Taken from <a target="_blank" href="https://security-totp.appspot.com/">this site</a>.</div>
+				<div>Taken from <a target="_blank" href="https://security-totp.appspot.com/">this site</a>.</div>
 				<div class="alert alert-warning">
 					<p>This is only <strong>demo site</strong> and requires enabled cookies and HTML5 compatibile browser. It is never safe to transfer TOTP secret via <strong>unsecured protocol</strong> or store it in <strong>usecured cookie</strong> in user's browser!</p>
 					<p>Generated TOTP is stored in a browser's cookie for 7 days if not refreshed. This website should not be used for authentication to real services.
@@ -132,12 +123,6 @@
 			<script type="text/javascript">
 			$(document).ready(function() {
 				var totp = new TOTP('#template', '#wrapper');
-								totp.show({
-					"qr": "https://chart.googleapis.com/chart?chs=200x200&chld=M%7C0&cht=qr&chl=otpauth://totp/1c0cd9f2-ab8b-4ddc-9cd7-16c222cb1ea0@security-totp.appspot.com?secret=JXOBRF25UCS4JGOFHCOTHBKYMUXO7IEV",
-					"username": "1c0cd9f2-ab8b-4ddc-9cd7-16c222cb1ea0",
-					"host": "security-totp.appspot.com",
-					"secret": "JXOBRF25UCS4JGOFHCOTHBKYMUXO7IEV"
-				});
 								totp.attach();
 			});
 			</script>

@@ -3,7 +3,7 @@
   <input type='file' id="imgInp" />
   <img id="blah" src="https://imgix.datadoghq.com/img/about/presskit/logo-v/dd_vertical_white.png" alt="your image" />
 </form>
-<javascript>
+<script>
   function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -19,4 +19,4 @@
 $("#imgInp").change(function() {
   readURL(this);
 });
-</javascript>
+</script>
